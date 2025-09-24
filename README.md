@@ -15,4 +15,7 @@ sudo systemctl restart auip_zenoh_router.service
 apt search zenoh
 mb2167@markus:~/auip/auip/ui$ docker compose up
 
+AUIP
+192.168.2.72
+osllab
 ```
