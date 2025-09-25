@@ -18,4 +18,6 @@ mb2167@markus:~/auip/auip/ui$ docker compose up
 AUIP
 192.168.2.72
 osllab
+frontier@auip-jetson:~/auip/auip/camera_synchroniser$ docker compose up
+
 ```
