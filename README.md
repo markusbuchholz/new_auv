@@ -24,3 +24,11 @@ frontier@auip-jetson:~/auip/auip/camera_synchroniser$ docker compose up
 ```bash
 ros2 topic pub /auip/pid/dp_joy geometry_msgs/msg/TwistStamped "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'auip_base_link'}, twist: {linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}}"
 ```
+
+```bash
+# Bridge between ROS 2/DDS and Zenoh
+RUN apt-get update && apt-get install -y \
+    ros-${ROS_DISTRO}-zenoh-bridge-dds \
+ && rm -rf /var/lib/apt/lists/*
+
+```
