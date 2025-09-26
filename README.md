@@ -30,5 +30,9 @@ ros2 topic pub /auip/pid/dp_joy geometry_msgs/msg/TwistStamped "{header: {stamp:
 RUN apt-get update && apt-get install -y \
     ros-${ROS_DISTRO}-zenoh-bridge-dds \
  && rm -rf /var/lib/apt/lists/*
+```
 
+
+```bash
+ros2 run zenoh_bridge_dds zenoh-bridge-dds
 ```
