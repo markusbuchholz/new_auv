@@ -17,7 +17,9 @@ mb2167@markus:~/auip/auip/ui$ docker compose up
 
 AUIP
 192.168.2.72
-osllab
+osllab2013
+sudo systemctl restart auip_camera_arena.service
+sudo journalctl -u auip_camera_arena.service -ef
 frontier@auip-jetson:~/auip/auip/camera_synchroniser$ docker compose up
 
 ```
@@ -34,5 +36,5 @@ RUN apt-get update && apt-get install -y \
 
 
 ```bash
-ros2 run zenoh_bridge_dds zenoh-bridge-dds
+sudo journalctl -u auip_camera_arena.service -ef
 ```
