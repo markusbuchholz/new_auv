@@ -21,6 +21,7 @@ osllab2013
 sudo systemctl restart auip_camera_arena.service
 sudo journalctl -u auip_camera_arena.service -ef
 frontier@auip-jetson:~/auip/auip/camera_synchroniser$ docker compose up
+systemctl restart auip_vslam.service 
 
 ```
 ```bash
