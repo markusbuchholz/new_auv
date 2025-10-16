@@ -1,6 +1,11 @@
 # new_auv
 
 ```bash
+mb2167@markus:~/auip/auip/ui$ docker compose up
+```
+
+
+```bash
 
 ros2 run rmw_zenoh_cpp rmw_zenohd
 
