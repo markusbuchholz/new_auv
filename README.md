@@ -1,4 +1,4 @@
-# new_auv
+# new auv
 
 ```bash
 mb2167@markus:~/auip/auip/ui$ docker compose up
